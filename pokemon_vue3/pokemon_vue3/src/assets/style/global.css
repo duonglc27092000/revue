@@ -1,0 +1,25 @@
+:root {
+  --dark: #212121;
+  --light: #f3f3f3;
+  --font: 'Odibee Sans', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+}
