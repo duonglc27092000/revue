@@ -7,7 +7,7 @@
       :ref="`card-${index}`"
       :img-back-face-url="`images/${card}.png`"
       :card="{ index, value: card }"
-      @onFlip="checkRule($event)"
+      @on-flip="checkRule($event )"
     />
   </div>
 </template>
@@ -47,12 +47,12 @@ export default {
         this.rules[0].value !== this.rules[1].value
       ) {
         console.log("...wrong");
-
+        console.log(this.$refs);
         // close tow card
         this.$refs[`card-${this.rules[0].index}`].onFlipBack();
         this.$refs[`card-${this.rules[1].index}`].onFlipBack();
         // reset rules to []
-        this.rules = [];
+        // this.rules = [];
       } else return false;
     },
   },
